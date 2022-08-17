@@ -36,7 +36,8 @@ output_A_datasets = [dataiku.Dataset(name) for name in output_A_names]
 # user will be prompted for values.
 
 # The configuration is simply a map of parameters, and retrieving the value of one of them is simply:
-my_variable = get_recipe_config()['distribution']
+my_variable = get_recipe_config().get('distribution')
+
 
 # Note about typing:
 # The configuration of the recipe is passed through a JSON object
