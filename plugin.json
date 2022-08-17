@@ -11,9 +11,9 @@
         "label": "Fit distribution",
 
         // description: longer string to help end users understand what this plugin does
-        "description": "",
+        "description": "fit GLM model with a specified distribution and returns predictions",
 
-        "author": "admin",
+        "author": "VS",
 
         // icon: must be one of the FontAwesome 3.2.1 icons, complete list here at https://fontawesome.com/v3.2.1/icons/
         "icon": "icon-puzzle-piece",
