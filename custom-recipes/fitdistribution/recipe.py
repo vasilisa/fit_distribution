@@ -67,7 +67,6 @@ if (dist_name not in names):
 # Get the data
 # dataset = dataiku.Dataset("loss_data_prepared_prepared")
 df   = dataset.get_dataframe()
-# df.head()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the project variable with the information about the distribution 
