@@ -43,8 +43,6 @@ output_dataset  = [dataiku.Dataset(name) for name in output_names]
 # The configuration is simply a map of parameters, and retrieving the value of one of them is simply:
 dist_name = get_recipe_config().get('distribution')
 
-
-
 ### ERROR CHECKING OF USER INPUTS ###
 
 # Check that x, y and z axis correspond to column names
