@@ -25,9 +25,9 @@ import numpy as np
 # Roles need to be defined in recipe.json, in the inputRoles and outputRoles fields.
 
 # To  retrieve the datasets of an input role named 'input_A' as an array of dataset names:
-input_A_names = get_input_names_for_role('main')
+input_dataset_names = get_input_names_for_role('main')
 # The dataset objects themselves can then be created like this:
-input_A_datasets = [dataiku.Dataset(name) for name in input_A_names]
+dataset = [dataiku.Dataset(name) for name in input_A_names]
 
 # For outputs, the process is the same:
 output_A_names = get_output_names_for_role('main_output')
@@ -62,19 +62,6 @@ if (dist_name not in names):
 # Your original recipe
 #############################
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE_MAGIC_CELL
-# Automatically replaced inline charts by "no-op" charts
-# %pylab inline
-import matplotlib
-matplotlib.use("Agg")
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-import dataiku
-from dataiku import pandasutils as pdu
-import pandas as pd
-import statsmodels.api as sm
-import numpy as np
-import matplotlib.pyplot as plt
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the data
