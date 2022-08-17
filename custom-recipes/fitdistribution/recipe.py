@@ -48,6 +48,7 @@ dist_name = get_recipe_config().get('distribution')
 ### ERROR CHECKING OF USER INPUTS ###
 
 # Check that x, y and z axis correspond to column names
+names = ["NegativeBinomial","Poisson","Tweedie"]
 if (dist_name not in names):
     raise KeyError("Unknown distribution")
     
@@ -82,6 +83,7 @@ exog = sm.add_constant(exog)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # specify a model
 # set up the model based on the project variable 
+names = ["NegativeBinomial","Poisson","Tweedie"]
 
 if(dist_name=="NegativeBinomial"):
     famiily = sm.families.NegativeBinomial()
