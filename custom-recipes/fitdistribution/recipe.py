@@ -65,7 +65,7 @@ if (dist_name not in names):
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the data
-dataset = dataiku.Dataset("loss_data_prepared_prepared")
+# dataset = dataiku.Dataset("loss_data_prepared_prepared")
 df   = dataset.get_dataframe()
 # df.head()
 
