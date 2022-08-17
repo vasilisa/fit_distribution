@@ -83,9 +83,9 @@ exog = sm.add_constant(exog)
 # set up the model based on the project variable 
 
 if(dist_name=="NegativeBinomial"):
-    famiily = sm.families.NegativeBinomial()
+    family = sm.families.NegativeBinomial()
 elif(dist_name=="Poisson"):
-    famiily = sm.families.Poisson()
+    family = sm.families.Poisson()
 elif(dist_name=="Tweedie"):
     family = sm.families.Tweedie()
 else:
