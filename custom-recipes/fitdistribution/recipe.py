@@ -27,7 +27,7 @@ import numpy as np
 # To  retrieve the datasets of an input role named 'input_A' as an array of dataset names:
 input_dataset_names = get_input_names_for_role('main')
 # The dataset objects themselves can then be created like this:
-dataset = [dataiku.Dataset(name) for name in input_A_names]
+dataset = [dataiku.Dataset(name) for name in input_dataset_names]
 
 # For outputs, the process is the same:
 output_names    = get_output_names_for_role('main_output')
