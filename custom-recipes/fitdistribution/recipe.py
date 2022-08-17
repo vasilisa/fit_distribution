@@ -25,13 +25,14 @@ import numpy as np
 # Roles need to be defined in recipe.json, in the inputRoles and outputRoles fields.
 
 # To  retrieve the datasets of an input role named 'input_A' as an array of dataset names:
-input_dataset_names = get_input_names_for_role('main')
+input_dataset_name = get_input_names_for_role('main')[0]
 # The dataset objects themselves can then be created like this:
-dataset = [dataiku.Dataset(name) for name in input_dataset_names]
+input_dataset = dataiku.Dataset(input_dataset_name)
+df = input_dataset.get_dataframe()
 
 # For outputs, the process is the same:
-output_names    = get_output_names_for_role('main_output')
-output_dataset  = [dataiku.Dataset(name) for name in output_names]
+output_dataset_name    = get_output_names_for_role('main_output')[0]
+output_dataset         = dataiku.Dataset(output_dataset_name)
 
 
 # The configuration consists of the parameters set up by the user in the recipe Settings tab.
