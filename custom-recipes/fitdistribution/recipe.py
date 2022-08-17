@@ -14,6 +14,11 @@
 import dataiku
 # Import the helpers for custom recipes
 from dataiku.customrecipe import *
+from dataiku import pandasutils as pdu
+import pandas as pd
+import statsmodels.api as sm
+import numpy as np
+
 
 # Inputs and outputs are defined by roles. In the recipe's I/O tab, the user can associate one
 # or more dataset to each input and output role.
