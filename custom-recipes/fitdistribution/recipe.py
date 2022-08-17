@@ -102,5 +102,4 @@ df["loss_predicted"] = y_hat
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-loss_data_fitted = dataiku.Dataset(output_dataset)
-loss_data_fitted.write_with_schema(df)
+output_dataset.write_with_schema(df)
