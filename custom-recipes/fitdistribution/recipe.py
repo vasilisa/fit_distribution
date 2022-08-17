@@ -31,7 +31,7 @@ dataset = [dataiku.Dataset(name) for name in input_dataset_names]
 
 # For outputs, the process is the same:
 output_names    = get_output_names_for_role('main_output')
-output_datasets = [dataiku.Dataset(name) for name in output_A_names]
+output_datasets = [dataiku.Dataset(name) for name in output_names]
 
 
 # The configuration consists of the parameters set up by the user in the recipe Settings tab.
