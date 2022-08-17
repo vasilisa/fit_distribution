@@ -83,7 +83,6 @@ exog = sm.add_constant(exog)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # specify a model
 # set up the model based on the project variable 
-names = ["NegativeBinomial","Poisson","Tweedie"]
 
 if(dist_name=="NegativeBinomial"):
     famiily = sm.families.NegativeBinomial()
