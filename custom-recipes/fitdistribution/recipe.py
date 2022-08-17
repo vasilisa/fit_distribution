@@ -74,7 +74,7 @@ df   = dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 endog  = df['PurePremium'].values
-exog = df.drop('PurePremium', axis=1).values
+exog   = df.drop('PurePremium', axis=1).values
 
 # add a constnat
 exog = sm.add_constant(exog)
