@@ -28,7 +28,6 @@ import numpy as np
 input_dataset_name = get_input_names_for_role('main')[0]
 # The dataset objects themselves can then be created like this:
 input_dataset = dataiku.Dataset(input_dataset_name)
-df = input_dataset.get_dataframe()
 
 # For outputs, the process is the same:
 output_dataset_name    = get_output_names_for_role('main_output')[0]
@@ -66,7 +65,7 @@ if (dist_name not in names):
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the data
 # dataset = dataiku.Dataset("loss_data_prepared_prepared")
-df   = dataset.get_dataframe()
+df   = input_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the project variable with the information about the distribution 
