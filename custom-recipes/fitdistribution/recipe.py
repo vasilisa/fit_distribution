@@ -72,7 +72,7 @@ df   = input_dataset.get_dataframe()
 if(dist_name=="NegativeBinomial"):
     family = sm.families.NegativeBinomial()
 elif(dist_name=="Poisson"):
-    famiily = sm.families.Poisson()
+    family = sm.families.Poisson()
 elif(dist_name=="Tweedie"):
     family = sm.families.Tweedie()
 else:
