@@ -69,7 +69,15 @@ df   = input_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the project variable with the information about the distribution 
-# OLD NOT USED IN THE PLUGIN dist_name = (dataiku.get_custom_variables()["distribution"])
+if(dist_name=="NegativeBinomial"):
+    famiily = sm.families.NegativeBinomial()
+elif(dist_name=="Poisson"):
+    famiily = sm.families.Poisson()
+elif(dist_name=="Tweedie"):
+    family = sm.families.Tweedie()
+else:
+    raise NameError('Unknown Distribution name')
+
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 endog  = df['PurePremium'].values
