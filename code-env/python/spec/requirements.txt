@@ -1,1 +1,1 @@
-statsmodels
+statsmodels==0.10.2
