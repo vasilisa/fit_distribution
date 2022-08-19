@@ -69,7 +69,7 @@ df   = input_dataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the project variable with the information about the distribution 
-# dist_name = (dataiku.get_custom_variables()["distribution"])
+# OLD NOT USED IN THE PLUGIN dist_name = (dataiku.get_custom_variables()["distribution"])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 endog  = df['PurePremium'].values
