@@ -70,7 +70,7 @@ df   = input_dataset.get_dataframe()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Get the project variable with the information about the distribution 
 if(dist_name=="NegativeBinomial"):
-    famiily = sm.families.NegativeBinomial()
+    family = sm.families.NegativeBinomial()
 elif(dist_name=="Poisson"):
     famiily = sm.families.Poisson()
 elif(dist_name=="Tweedie"):
